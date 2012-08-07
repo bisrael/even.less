@@ -126,3 +126,25 @@ Additional Background Settings:
   - `.bgr-no()` --> `no-repeat`
   - `.bgr-x()` --> `repeat-x`
   - `.bgr-y()` --> `repeat-y`
+
+### CSS3 Transformations & Transitions
+
+#### Transitions
+
+- `.xtn(@value)` --> `transition: @value` & vendor-prefixes
+- `.xtn(@time, @function[, @property: all])` --> useful for applying an all transition
+
+#### Transforms
+
+- `.xfm(@value)` --> `transform: @value` & vendor-prefixes
+- `.rot(@angle)` --> rotate by angle
+- `.scl(@factor)` --> scale by factor
+- `.skw(@x-angle, @y-angle)` --> skew by x-angle and y-angle
+- `.xlt(@x, @y)` --> translate by x,y
+
+Since CSS Transforms will override each other with successive property declarations, we need combos.
+Combos are chained in alphabetical order (by abbreviation, not function-name).
+
+- `.rot-scl(@angle, @factor)`
+- `.rot-skw(@angle, @x-angle, @y-angle)`
+- `.rot-xlt(@angle, @x, @y)`

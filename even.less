@@ -1,5 +1,5 @@
 /*!
- * even.less v0.1.0
+ * even.less v0.1.1
  * github.com/bisrael/even.less/
  * Copyright (c) 2012, Blake Israel
  *
@@ -150,7 +150,10 @@
 .rot(@a) {.xfm(rotate(@a));}
 .skw(@x,@y) {.xfm(skew(@x,@y));}
 .rot-scl(@r,@s) {.xfm(rotate(@r) scale(@s));}
+.rot-skw(@r,@x,@y) {.xfm(rotate(@r) skew(@x,@y));}
 .rot-xlt(@r,@x,@y) {.xfm(rotate(@r) translate(@x,@y));}
+.scl-skw(@s,@x,@y) {.xfm(scale(@s) skew(@x,@y));}
+.scl-xlt(@s,@x,@y) {.xfm(scale(@s) translate(@x,@y));}
 .mtrx(@a,@b,@c,@d,@e,@f) {.xfm(matrix(@a,@b,@c,@d,@e,@f));}
 // Transform Origin
 .orgn(@x,@y) {.property(transform-origin,@x @y,"webkit moz ms o");} .orgn(@o) {.orgn(@o,@o);}
