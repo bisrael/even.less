@@ -12,7 +12,11 @@ coupled with consistency to make write you LESS files faster, easier and smaller
 - `.none()` --> `none`
 - `.blk()` --> `block`
 - `.nln()` --> `inline`
+- `.iln()` --> `inline`
+- `.ilb()` --> `inline-block`
+- `.nblk()` --> `inline-block`
 - `.iblk()` --> `inline-block`
+- `.ilnblk()` --> `inline-block`
 
 #### Position
 
